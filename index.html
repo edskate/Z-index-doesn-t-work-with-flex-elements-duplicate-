@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  display: flex;
+  background-color: #99baef;
+}
+
+nav {
+  height: 100%;
+  width: 8em;
+  background-color: black;
+  z-index: 1;
+}
+
+.navbox {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  height: 4em;
+  width: 100%;
+  text-align: center;
+  line-height: 4em;
+  border-top: 1px dotted #99baef;
+  transition: all 1s;
+}
+
+.navbox:hover {
+  width: 130%;
+  border-top: none;
+  background-color: #4a77c4;
+  color: black;
+}
+
+.container {
+  padding: 1em;
+}
+.my-element {
+  box-shadow: 0px 0px 20px 5px darkslateblue;
+  border-radius: 25px;
+}
+
+/* Presentational styles */
+.my-element {
+  width: 250px;
+  height: 250px;
+  background: var(--color-primary-x-light);
+  margin: 1em 2em;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="maincolumn">
+          <nav>
+            <a href="">
+              <div class="navbox">
+                Nav 1
+              </div>
+            </a>
+            <a href="">
+              <div class="navbox">
+                Nav 2
+              </div>
+            </a>
+          </nav>
+        </div>
+        <div class="maincolumn">
+          <div class="container">
+            <h2>Title</h2>
+            <p>This is a text.</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-element"></div>
+</body>
+</html>
